@@ -9,13 +9,27 @@ import { Component } from '@angular/core';
 export class BooksListComponent {
   imageWidth: number = 100;
   showImage:boolean= true;
+  booksInStock:number = 2;
 
-  bookAuthor: string = "Tom Jones";
-  bookTitle: string = "War Peace 2";
-  bookPrice: string = "$29.95";
-  bookDescription: string = "book historical fiction";
-  bookReviews: number = 15;
-  bookImageUrl: string = "app/assets/images/656.jpg";
+  books: any[] = [{
+    bookAuthor: "Tom Jones",
+    bookTitle: "War Peace 2",
+    bookPrice: "$29.95",
+    bookDescription: "book historical fiction",
+    bookReviews: 15,
+    bookImageUrl: "app/assets/images/656.jpg"
+  },{
+    bookAuthor: "Nick Jones",
+    bookTitle: "Just Peace 2",
+    bookPrice: "$19.95",
+    bookDescription: "historical fiction",
+    bookReviews: 115,
+    bookImageUrl: "app/assets/images/656.jpg"
+  }
+]
+
+
+
 
   toggleImage():void {
     this.showImage = !this.showImage;
