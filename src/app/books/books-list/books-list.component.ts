@@ -14,15 +14,19 @@ export class BooksListComponent {
   books: any[] = [{
     bookAuthor: "Tom Jones",
     bookTitle: "War Peace 2",
-    bookPrice: "$29.95",
+    bookPrice: 29.95,
     bookDescription: "book historical fiction",
+    publishedOn: new Date('02/11/1921'),
+    inStock: 'yes',
     bookReviews: 15,
     bookImageUrl: "app/assets/images/656.jpg"
   },{
     bookAuthor: "Nick Jones",
     bookTitle: "Just Peace 2",
-    bookPrice: "$19.95",
+    bookPrice: 29.95,
     bookDescription: "historical fiction",
+    publishedOn: new Date('02/11/1929'),
+    inStock: 'yes',
     bookReviews: 115,
     bookImageUrl: "app/assets/images/656.jpg"
   }
